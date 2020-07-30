@@ -1,0 +1,12 @@
+import request as req		
+res = req.get("https://en.wikipedia.org/wiki/The_Goldfinch_(painting)")		
+#print(resp.text)		
+file = open("wikiflee.rtf","w")		
+file.write(res.text)		
+file.close()		
+
+ 
+  file = open("wikifle.rtf","r")		 
+ print(file.read())		
+ file.close() 		
+
